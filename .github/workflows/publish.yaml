@@ -17,4 +17,5 @@ jobs:
       - run: flutter pub get
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
-          baseHref: /ripple_animation/ 
+          baseHref: /ripple_animation/
+          webRenderer: canvaskit 
