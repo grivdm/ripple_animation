@@ -22,8 +22,8 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
         
-      - name: Enable web
-        run: flutter config --enable-web
+      - name: Initialize web platform
+        run: flutter create --platforms web .
         
       - name: Build web
         run: flutter build web --base-href "/ripple_animation/"
